@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>umi-cordova</title>
+  <% if(context.env === 'production') { %>
+    <script src="./cordova.js"></script>
+  <% } else {%>
+    <script src="http://localhost:8001/cordova.js"></script>
+  <% } %>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
